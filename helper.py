@@ -2,8 +2,8 @@ import plotly.graph_objects as go
 
 
 def display_table(temp, height=100, width=300, title=""):
-    data = [['Survived_true','Died_true']]
-    header = ['','Survived_pred','Died_pred']
+    data = [['Died_true','Survived_true']]
+    header = ['','Died_pred','Survived_pred']
     for i in range(len(temp)):
         data.append([temp[:,i][0], temp[:,i][1]])
 
